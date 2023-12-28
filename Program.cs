@@ -11,7 +11,7 @@ long Fubonakki(long i)
     if (memoize.TryGetValue(i, out long result))
         return result;
 
-    result = Fubonakki(i - 1) + Fubonakki(i - 2) + Fubonakki(i - 3);
+    result = Fubonaki(i - 1) + Fubonakki(i - 2) + Fubonakki(i - 3);
     memoize.Add(i, result);
     return result;
 }
