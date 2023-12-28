@@ -4,8 +4,8 @@
 
     static public long Calculate(long i)
     {
-        // if (i < 0)
-        //     throw new Exception("Negative index for fubonakki numbers");
+        if (i < 0)
+            throw new Exception("Negative index for fubonakki numbers");
         
         if (i < 3)
             return 1;
